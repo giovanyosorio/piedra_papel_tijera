@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIEDRA PAPEL O TIJERA </title>
+    <script>
+        // 1 piedra,2 papel, 3 tijera
+        let jugador=0
+        let pc=3
+        jugador= prompt("escoge 1 piedra,2 papel, 3 tijera")
+       
+        if (jugador==1) {
+            alert("escogiste ✊")
+        } else if (jugador==2) {
+            alert("escogiste  📄")
+        }else if (jugador==3) {
+            alert("escogiste ✂️  ")
+        } else{
+            alert("escogiste perder")
+        }
+      
+        if (pc==1) {
+            alert("PC elige ✊")
+        } else if (pc==2) {
+            alert("PC elige  📄")
+        }else if (pc==3) {
+            alert("PC elige ✂️  ")
+        } 
+        else{
+            alert("escogiste perder")
+        }
+        //Combate
+        if (pc==jugador) {
+            alert("EMPATE")
+        } else if (jugador==1 && pc==3) {
+            alert("GANASTE")
+        }else if (jugador==2 && pc==1) {
+            alert("GANASTE  ")
+        } else if (jugador==3 && pc==2) {
+            alert("GANASTE  ")
+        } else{
+            alert("PERDISTE")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
